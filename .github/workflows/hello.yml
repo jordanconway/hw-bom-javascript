@@ -1,0 +1,17 @@
+# .github/workflows/hello.yml
+name: Hello World
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello from an unattested workflow!"
+
+  farewell:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Goodbye from another unattested job!"
